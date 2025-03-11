@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero {
+            background: url('https://cdn.bhdw.net/im/black-and-silver-film-camera-on-brown-wooden-surface-antique-wallpaper-83983_w635.webp') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .btn {
+            display: inline-block;
+            background: #ff7f50;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .features, .pricing, .testimonials, .contact, .products {
+            background: white;
+            padding: 40px 0;
+        }
+        .feature-grid, .pricing-grid, .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .feature-item, .pricing-item, .product-card {
+            background: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Camera</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li> 
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>High-Resolution Digital Camera</h2>
+            <p>A cutting-edge digital camera with advanced autofocus, 4K video recording, and optical image stabilization for capturing stunning photos and videos. </p>
+            <a href="#pricing" class="btn">Get Started</a>
+        </div>
+    </section>
+    <hr>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">Wi-Fi & Bluetooth</div>
+                <div class="feature-item">4K Video Recording</div>
+                <div class="feature-item">Long Battery Life</div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/916GGqnsG+L._SL1500_.jpg" alt="Product 1">
+                    <h3>Canon EOS 3000D 18MP Digital SLR Camera</h3>
+                    <p>(Black) with 18-55mm is II Lens, 16GB Card and Carry Case.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/81+9LRBzz6L._SL1500_.jpg" alt="Product 2">
+                    <h3>Sony Alpha ILCE 6100L 24.2 MP Mirrorless Digital SLR Camera</h3>
+                    <p>16-50 mm Power Zoom Lens | APS-C Sensor | Fast Auto Focus,Real-time Eye AF,Real-time Tracking | 4K Vlogging Camera - Black.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/51Jfq1yt2OL.jpg" alt="Product 3">
+                    <h3>Nikon Z50 Mirrorless Camera</h3>
+                    <p>(24.5 MP) Body Only with Additional Battery & 64 GB SD Card</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-item">Basic <br> ₹873.70/mo</div>
+                <div class="pricing-item">Pro <br> ₹2632.79/mo</div>
+                <div class="pricing-item">Enterprise <br> ₹4,368.81/mo</div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <p>"This camera captures every detail with stunning clarity! The best choice for photography lovers."</p>
+        </div>
+    </section>
+    <hr>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: cameraindia@product.com</p>
+            <p>Phone: +91 9106095xxx</p>
+            <p>Address: Ahmedabad, Gujarat, India</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Camera. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
